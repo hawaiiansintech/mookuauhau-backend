@@ -2,6 +2,13 @@ table:
   schema: public
   name: mookuauhau
 array_relationships:
+  - name: accessrequests
+    using:
+      foreign_key_constraint_on:
+        column: mookuauhau_id
+        table:
+          schema: public
+          name: accessrequest
   - name: kanakas
     using:
       foreign_key_constraint_on:

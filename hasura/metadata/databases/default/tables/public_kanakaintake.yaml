@@ -1,0 +1,152 @@
+table:
+  schema: public
+  name: kanakaintake
+insert_permissions:
+  - role: public
+    permission:
+      check: {}
+      columns:
+        - intake_id
+        - mookuauhau_id
+        - birth_date
+        - birth_place
+        - dad_birth_date
+        - dad_birth_place
+        - dad_family_name
+        - dad_given_name
+        - family_name
+        - file_id
+        - filename
+        - given_name
+        - mom_birth_date
+        - mom_birth_place
+        - mom_family_name
+        - mom_given_name
+        - name
+        - request_status
+        - create_timestamp
+        - owner_id
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - intake_id
+        - mookuauhau_id
+        - birth_date
+        - birth_place
+        - dad_birth_date
+        - dad_birth_place
+        - dad_family_name
+        - dad_given_name
+        - family_name
+        - file_id
+        - filename
+        - given_name
+        - mom_birth_date
+        - mom_birth_place
+        - mom_family_name
+        - mom_given_name
+        - name
+        - request_status
+        - create_timestamp
+        - owner_id
+select_permissions:
+  - role: public
+    permission:
+      columns:
+        - intake_id
+        - mookuauhau_id
+        - owner_id
+        - name
+        - family_name
+        - given_name
+        - birth_date
+        - birth_place
+        - mom_family_name
+        - mom_given_name
+        - mom_birth_date
+        - mom_birth_place
+        - dad_family_name
+        - dad_given_name
+        - dad_birth_date
+        - dad_birth_place
+        - file_id
+        - filename
+        - request_status
+        - create_timestamp
+      filter: {}
+  - role: user
+    permission:
+      columns:
+        - intake_id
+        - mookuauhau_id
+        - birth_date
+        - birth_place
+        - dad_birth_date
+        - dad_birth_place
+        - dad_family_name
+        - dad_given_name
+        - family_name
+        - file_id
+        - filename
+        - given_name
+        - mom_birth_date
+        - mom_birth_place
+        - mom_family_name
+        - mom_given_name
+        - name
+        - request_status
+        - create_timestamp
+        - owner_id
+      filter: {}
+update_permissions:
+  - role: public
+    permission:
+      columns:
+        - intake_id
+        - mookuauhau_id
+        - birth_date
+        - birth_place
+        - dad_birth_date
+        - dad_birth_place
+        - dad_family_name
+        - dad_given_name
+        - family_name
+        - file_id
+        - filename
+        - given_name
+        - mom_birth_date
+        - mom_birth_place
+        - mom_family_name
+        - mom_given_name
+        - name
+        - request_status
+        - create_timestamp
+        - owner_id
+      filter: {}
+      check: {}
+  - role: user
+    permission:
+      columns:
+        - intake_id
+        - mookuauhau_id
+        - birth_date
+        - birth_place
+        - dad_birth_date
+        - dad_birth_place
+        - dad_family_name
+        - dad_given_name
+        - family_name
+        - file_id
+        - filename
+        - given_name
+        - mom_birth_date
+        - mom_birth_place
+        - mom_family_name
+        - mom_given_name
+        - name
+        - request_status
+        - create_timestamp
+        - owner_id
+      filter: {}
+      check: {}

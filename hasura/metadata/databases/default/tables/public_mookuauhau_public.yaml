@@ -1,0 +1,13 @@
+table:
+  schema: public
+  name: mookuauhau_public
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - mookuauhau_id
+        - name
+        - visibility
+        - create_timestamp
+        - owner_id
+      filter: {}

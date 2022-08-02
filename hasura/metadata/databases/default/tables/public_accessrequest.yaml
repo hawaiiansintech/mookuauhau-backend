@@ -19,7 +19,6 @@ insert_permissions:
         - owner_id
         - purpose
         - request_id
-        - request_status
         - requester_id
         - type_of_data
 select_permissions:

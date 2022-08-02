@@ -105,3 +105,12 @@ array_relationships:
         table:
           schema: auth
           name: user_providers
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - avatar_url
+        - display_name
+        - email
+        - id
+      filter: {}

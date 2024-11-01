@@ -9,8 +9,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "show": "node -r dotenv/config ./dist/index.js",
-    "load": "ts-node-esm -r dotenv/config ./src/astload.ts",
-    "compactload": "ts-node-esm -r dotenv/config ./src/compactload.ts",
+    "load": "node -r dotenv/config ./dist/astload.js",
+    "compactload": "node -r dotenv/config ./dist/compactload.js",
     "queueload": "npm run build && node -r dotenv/config ./dist/queueload.js",
     "t4j": "ts-node-esm -r dotenv/config src/neo4jtest.ts",
     "tgql": "ts-node-esm -r dotenv/config src/graphqltest.ts",

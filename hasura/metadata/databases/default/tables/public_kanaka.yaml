@@ -1,6 +1,6 @@
 table:
-  schema: public
   name: kanaka
+  schema: public
 object_relationships:
   - name: mookuauhau
     using:
@@ -11,22 +11,22 @@ array_relationships:
       foreign_key_constraint_on:
         column: wahine_id
         table:
-          schema: public
           name: ohana
+          schema: public
   - name: makuakane
     using:
       foreign_key_constraint_on:
         column: kane_id
         table:
-          schema: public
           name: ohana
+          schema: public
   - name: namakua
     using:
       foreign_key_constraint_on:
         column: kanaka_id
         table:
-          schema: public
           name: kamalii
+          schema: public
 insert_permissions:
   - role: user
     permission:
@@ -158,7 +158,6 @@ update_permissions:
 delete_permissions:
   - role: user
     permission:
-      backend_only: false
       filter:
         mookuauhau:
           owner_id:

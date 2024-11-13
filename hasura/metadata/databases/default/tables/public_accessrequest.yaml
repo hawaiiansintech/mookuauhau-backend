@@ -1,6 +1,6 @@
 table:
-  schema: public
   name: accessrequest
+  schema: public
 object_relationships:
   - name: mookuauhau
     using:

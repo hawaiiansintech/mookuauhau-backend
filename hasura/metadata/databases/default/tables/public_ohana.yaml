@@ -1,6 +1,6 @@
 table:
-  schema: public
   name: ohana
+  schema: public
 object_relationships:
   - name: kane
     using:
@@ -17,8 +17,8 @@ array_relationships:
       foreign_key_constraint_on:
         column: ohana_id
         table:
-          schema: public
           name: kamalii
+          schema: public
 insert_permissions:
   - role: user
     permission:
@@ -114,7 +114,6 @@ update_permissions:
 delete_permissions:
   - role: user
     permission:
-      backend_only: false
       filter:
         mookuauhau:
           owner_id:

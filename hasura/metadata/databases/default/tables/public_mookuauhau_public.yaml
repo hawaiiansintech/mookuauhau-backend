@@ -1,6 +1,6 @@
 table:
-  schema: public
   name: mookuauhau_public
+  schema: public
 select_permissions:
   - role: user
     permission:

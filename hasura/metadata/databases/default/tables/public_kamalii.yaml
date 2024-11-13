@@ -1,6 +1,6 @@
 table:
-  schema: public
   name: kamalii
+  schema: public
 object_relationships:
   - name: kanaka
     using:
@@ -68,7 +68,6 @@ update_permissions:
 delete_permissions:
   - role: user
     permission:
-      backend_only: false
       filter:
         ohana:
           mookuauhau:
